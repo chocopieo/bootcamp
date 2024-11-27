@@ -135,6 +135,22 @@ const routes = [
       import(
         /* webpackChunkName: "extra", webpackPrefetch: true */ '../views/3_extra/RenderingShowView.vue'
       )
+  },
+  {
+    path: '/extra/computed',
+    name: 'ComputedView',
+    component: () =>
+      import(
+        /* webpackChunkName: "extra", webpackPrefetch: true */ '../views/3_extra/ComputedView.vue'
+      )
+  },
+  {
+    path: '/extra/watch',
+    name: 'WatchView',
+    component: () =>
+      import(
+        /* webpackChunkName: "extra", webpackPrefetch: true */ '../views/3_extra/WatchView.vue'
+      )
   }
 ]
 

@@ -159,6 +159,22 @@ const routes = [
       import(
         /* webpackChunkName: "extra", webpackPrefetch: true */ '../views/3_extra/LifecycleHookView.vue'
       )
+  },
+  {
+    path: '/reuse/pagetitle',
+    name: 'PageView',
+    component: () =>
+      import(
+        /* webpackChunkName: "resue", webpackPrefetch: true */ '../views/4_reuse/PageView.vue'
+      )
+  },
+  {
+    path: '/reuse/parent',
+    name: 'ParentView',
+    component: () =>
+      import(
+        /* webpackChunkName: "resue", webpackPrefetch: true */ '../views/4_reuse/ParentView.vue'
+      )
   }
 ]
 

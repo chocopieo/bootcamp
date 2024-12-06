@@ -183,6 +183,14 @@ const routes = [
       import(
         /* webpackChunkName: "resue", webpackPrefetch: true */ '../views/4_reuse/ListView.vue'
       )
+  },
+  {
+    path: '/reuse/slot',
+    name: 'SlotView',
+    component: () =>
+      import(
+        /* webpackChunkName: "resue", webpackPrefetch: true */ '../views/4_reuse/SlotView.vue'
+      )
   }
 ]
 
